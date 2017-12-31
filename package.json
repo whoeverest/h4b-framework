@@ -1,0 +1,14 @@
+{
+  "name": "h4b-framework",
+  "version": "1.0.0",
+  "description": "backend framework",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  }
+}
