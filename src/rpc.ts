@@ -25,10 +25,11 @@ export function rpc(klass: Function) {
  * allows accessing the exposed service methods.
  */
 export function mkRpc(services: any) {
+    console.log(services)
     return (route: string, params: {}) => {
         const [serviceName, method] = route.split('.');
-        const Kls = (services)[serviceName];
-        console.log('calling', serviceName, method, 'with params', params)
+        console.log(serviceName, method)
+        const Kls = (services)[serviceName.toLowerCase()];
         return (new Kls()).__callRpc(method, params)
     };
 }

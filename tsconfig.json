@@ -1,9 +1,12 @@
 {
+  "include": [
+    "src"
+  ],
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
     "strict": true,
     "experimentalDecorators": true,
-    "outDir": "build"
+    "outDir": "build",
   }
 }
